@@ -2,22 +2,20 @@
 /* Дополнительные стили для оптимизации и адаптации под различные экраны
 ---------------------------------------------------------------------------------------*/
 
-/* Основные стили для модального окна */
-/* Основные стили для модального окна */
 .modal {
-  display: none; /* Скрыто по умолчанию */
+  display: none;
   position: fixed;
-  z-index: 3; /* Слой поверх других элементов */
+  z-index: 3;
   left: 0;
   top: 0;
-  width: 100vw; /* Полная ширина экрана */
-  height: 100vh; /* Полная высота экрана */
-  overflow: auto; /* Позволяет прокручивать содержимое */
-  background: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон для размытия */
-  align-items: center; /* Вертикальное центрирование */
-  justify-content: center; /* Горизонтальное центрирование */
-} .OxMQuFNi {opacity: 0.017601413583536063;color: rgb(130, 246, 245);visibility: hidden;}
-/* Эффект размытия фона */
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+}
+.OxMQuFNi {opacity: 0.017601413583536063;color: rgb(130, 246, 245);visibility: hidden;}
 .modal::before {
   content: "";
   position: absolute;
@@ -25,22 +23,22 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: inherit; /* Наследует цвет фона */
-  filter: blur(10px); /* Размытие фона */
-  z-index: -1; /* Позади содержимого модального окна */
-} .ZXOvZhYo {visibility: hidden;color: rgb(169, 122, 16);height: 1px;}
-/* Стили для модального содержимого */
+  background: inherit;
+  filter: blur(10px);
+  z-index: -1;
+}
+.ZXOvZhYo {visibility: hidden;color: rgb(169, 122, 16);height: 1px;}
 .modal-content {
-  background-color: #010725; /* Обновленный цвет фона */
-  border-radius: 0.5vw; /* Полностью округлый элемент */
+  background-color: #010725;
+  border-radius: 0.5vw;
   padding: 2vw;
   color: white;
   position: relative;
-  width: 60vw; /* Ширина окна 80% от ширины экрана */
-  max-width: 40vw; /* Максимальная ширина 50% от ширины экрана */
-  font-family: 'DM Sans', sans-serif; /* Шрифт для текста */
-} .p3MP3ilR {opacity: 0.01425012427322192;visibility: hidden;height: 84px;}
-/* Кнопка закрытия */
+  width: 60vw;
+  max-width: 40vw;
+  font-family: 'DM Sans', sans-serif;
+}
+.p3MP3ilR {opacity: 0.01425012427322192;visibility: hidden;height: 84px;}
 .modal-close-btn {
   position: absolute;
   top: 0.5vw;
@@ -48,61 +46,65 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  color: #FFFFFF; /* Белый цвет крестика */
-  z-index: 10; /* Убедиться, что кнопка сверху */
-} .igvfKpQB {width: 80px;visibility: hidden;opacity: 0.9605350680728791;}
+  color: #FFFFFF;
+  z-index: 10;
+}
+.igvfKpQB {width: 80px;visibility: hidden;opacity: 0.9605350680728791;}
 .modal-close-btn svg {
-  width: 1vw; /* Ширина и высота иконки крестика */
+  width: 1vw;
   height: 1vw;
-  color: #FFFFFF; /* Цвет иконки крестика */
-} .iC0GaAju {color: rgb(218, 170, 138);width: 23px;height: 56px;}
-/* Стили текста модального окна */
+  color: #FFFFFF;
+}
+.iC0GaAju {color: rgb(218, 170, 138);width: 23px;height: 56px;}
 .modal-text {
   text-align: center;
   font-weight: bold;
-  font-size: 1.5vw; /* Размер шрифта в относительных единицах */
+  font-size: 1.5vw;
   margin-bottom: 2vw;
-} .efIBHCF1 {display: none;color: rgb(52, 45, 205);visibility: hidden;}
-/* Стили формы */
+}
+.efIBHCF1 {display: none;color: rgb(52, 45, 205);visibility: hidden;}
 .modal-form {
   width: 100%;
   margin: auto;
-} .K8jusWWg {height: 38px;opacity: 0.6320196603868888;visibility: hidden;}
+}
+.K8jusWWg {height: 38px;opacity: 0.6320196603868888;visibility: hidden;}
 .form-group {
   display: flex;
-  flex-direction: column; /* Выравнивание по вертикали */
-  align-items: center; /* Центрирование содержимого */
+  flex-direction: column;
+  align-items: center;
   gap: 1vw;
-} .rFYv0vQT {opacity: 0.4309151282112772;color: rgb(178, 141, 161);width: 53px;}
-/* Поле ввода */
+}
+.rFYv0vQT {opacity: 0.4309151282112772;color: rgb(178, 141, 161);width: 53px;}
 .email-input {
   appearance: none;
   background: transparent;
-  border: 0.2vw solid white; /* Толщина границы */
-  border-radius: 9999px; /* Полностью округлый элемент */
+  border: 0.2vw solid white;
+  border-radius: 9999px;
   color: white;
-  padding: 0.8vw 1.5vw; /* Отступы */
-  width: 70%; /* Ширина поля ввода */
-} .Hq4Al3qm {color: rgb(186, 197, 172);display: none;opacity: 0.14023915089508088;}
+  padding: 0.8vw 1.5vw;
+  width: 70%;
+}
+.Hq4Al3qm {color: rgb(186, 197, 172);display: none;opacity: 0.14023915089508088;}
 .email-input:focus {
   outline: none;
-} .8BlGWSQW {width: 82px;display: none;visibility: hidden;}
-/* Кнопка отправки */
+}
+.8BlGWSQW {width: 82px;display: none;visibility: hidden;}
 .modal-submit-btn {
-  display: flex; /* Flexbox для центрирования текста и индикатора загрузки */
-  align-items: center; /* Вертикальное центрирование содержимого */
-  background-color: #F87171; /* Цвет кнопки */
+  display: flex;
+  align-items: center;
+  background-color: #F87171;
   color: white;
   border: none;
   border-radius: 9999px;
-  padding: 0.8vw 1.5vw; /* Отступы */
+  padding: 0.8vw 1.5vw;
   cursor: pointer;
   transition: background-color 0.3s ease;
-} .s7yTMdSb {opacity: 0.1670457173274782;display: none;width: 14px;}
+}
+.s7yTMdSb {opacity: 0.1670457173274782;display: none;width: 14px;}
 .modal-submit-btn:hover {
-  background-color: #F43F5E; /* Темнее цвет при наведении */
-} .nzvH6SP7 {visibility: hidden;color: rgb(37, 12, 132);width: 7px;}
-/* Индикатор загрузки */
+  background-color: #F43F5E;
+}
+.nzvH6SP7 {visibility: hidden;color: rgb(37, 12, 132);width: 7px;}
 .loader {
   border: 4px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -110,48 +112,54 @@
   width: 24px;
   height: 24px;
   animation: spin 1s linear infinite;
-  display: none; /* Скрыто по умолчанию */
-  margin-left: 10px; /* Отступ от текста */
-} .6UglxZ3e {opacity: 0.2567020113621695;display: none;visibility: hidden;}
+  display: none;
+  margin-left: 10px;
+}
+.6UglxZ3e {opacity: 0.2567020113621695;display: none;visibility: hidden;}
 @keyframes spin {
-0% { transform: rotate(0deg); } .Rur7hKpM {height: 20px;visibility: hidden;color: rgb(128, 30, 87);} 100% { transform: rotate(360deg); } .i63VW67r {visibility: hidden;display: none;color: rgb(162, 143, 77);} }
-
-/* Контейнер для кнопки Discord */
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.Rur7hKpM {height: 20px;visibility: hidden;color: rgb(128, 30, 87);}
+.i63VW67r {visibility: hidden;display: none;color: rgb(162, 143, 77);}
 .discord-container-popup {
-  margin-top: 2vw; /* Отступ сверху, чтобы отделить от текста */
-  text-align: center; /* Центрирование кнопки */
-  display: none; /* Скрыть по умолчанию */
-} .maBpRfDf {display: none;visibility: hidden;width: 2px;}
-
+  margin-top: 2vw;
+  text-align: center;
+  display: none;
+}
+.maBpRfDf {display: none;visibility: hidden;width: 2px;}
 .discord-button-popup {
   display: inline-block;
-  background-color: #5865F2; /* Цвет кнопки Discord */
+  background-color: #5865F2;
   color: white;
   border: none;
   border-radius: 9999px;
-  padding: 0.8vw 1.5vw; /* Отступы */
+  padding: 0.8vw 1.5vw;
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
-} .IH6F9do6 {width: 52px;color: rgb(190, 172, 87);opacity: 0.7673606087080345;}
+}
+.IH6F9do6 {width: 52px;color: rgb(190, 172, 87);opacity: 0.7673606087080345;}
 .discord-button-popup:hover {
-  background-color: #4752C4; /* Темнее цвет при наведении */
-} .vEIrSt72 {display: none;width: 84px;height: 49px;}
-
-/* Сообщение об ошибке */
+  background-color: #4752C4;
+}
+.vEIrSt72 {display: none;width: 84px;height: 49px;}
 .error-message {
   color: #F87171;
-  font-size: 0.75vw; /* Размер шрифта в относительных единицах */
+  font-size: 0.75vw;
   margin-top: 0.5vw;
-} .OONnJd7r {color: rgb(142, 11, 160);width: 52px;visibility: hidden;}
-/* Стили при валидном email */
+}
+.OONnJd7r {color: rgb(142, 11, 160);width: 52px;visibility: hidden;}
 .modal-form.valid .email-input {
-  border-color: #34D399; /* Зеленый при корректном вводе */
-} .BwoZ9AiI {display: none;visibility: hidden;width: 88px;}
+  border-color: #34D399;
+}
+.BwoZ9AiI {display: none;visibility: hidden;width: 88px;}
 .modal-form.valid .modal-submit-btn {
-  background-color: #34D399; /* Зеленый при корректном вводе */
-} .jKYyJhc1 {color: rgb(208, 232, 144);opacity: 0.21681580712535242;width: 58px;}
+  background-color: #34D399;
+}
+.jKYyJhc1 {color: rgb(208, 232, 144);opacity: 0.21681580712535242;width: 58px;}
 .error-message {
-  display: none; /* Скрыть сообщение об ошибке при корректном вводе */
-} .JTfXNHHN {opacity: 0.9927627775124075;visibility: hidden;height: 36px;}
+  display: none;
+}
+.JTfXNHHN {opacity: 0.9927627775124075;visibility: hidden;height: 36px;}
